@@ -134,7 +134,7 @@ groups <-c("low",
           "med",
           "high")
 
-#make the coordinate of interes dataset
+#make the 'coordinates of interest' dataset
 df.xy = data.frame(lat_y,long_x,coords_names, groups)
 
 #let's plot the map
@@ -161,8 +161,8 @@ and provinces with high/med/low number of retail bookshops")+
   geom_point(data=df.xy,size=3, aes(long_x,lat_y,colour=group))+
   geom_label_repel(aes(long_x,lat_y,label=coords_names))
 
-#interesting, Kaltim that has one of the highest proportion
-#only have med level of bookshops
+#interesting, Kaltim that has one of the highest proportion of readers
+#only have med level of number of retail bookshops;
 #while Jakarta, province with one of the highest number of bookshops
 #have one of the lowest proportion of people who read fictional books
 
